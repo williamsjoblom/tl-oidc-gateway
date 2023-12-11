@@ -1,0 +1,9 @@
+<html>
+  <body onload="document.getElementById('form').submit();">
+    <form id="form" method="post" action="{{ webaccess_url }}">
+      <input type="hidden" name="username" value="{{ username }}">
+      <input type="hidden" name="pamresponse" value="{{ token }}">
+      <input type="hidden" name="loginsubmit" value="1">
+    </form>
+  </body>
+</html>
